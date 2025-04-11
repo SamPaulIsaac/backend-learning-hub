@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14ec553f-1653-4c70-b81a-c41a3a5f5032" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2pTsOstGKrbYPH8PzkuVoYwdOBj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CustomComparatorExample.executor": "Run",
+    "Application.FilterAndCountMapEntries.executor": "Run",
+    "Application.FilterAndTransformProduct.executor": "Run",
+    "Application.FindMostFrequent.executor": "Run",
+    "Application.FrequencyCount.executor": "Run",
+    "Application.General.executor": "Run",
+    "Application.GroupByWordLength.executor": "Run",
+    "Application.InvertMap.executor": "Run",
+    "Application.LambdaExpression.executor": "Run",
+    "Application.MapTransformation.executor": "Run",
+    "Application.MaxAndMin.executor": "Run",
+    "Application.MergeAndRemoveDuplicates.executor": "Run",
+    "Application.PartitionList.executor": "Run",
+    "Application.PrefixBasedGrouping.executor": "Run",
+    "Application.SortMapValues.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.LambdaExpression">
+    <configuration name="CustomComparatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CustomComparatorExample" />
+      <module name="JavaPracticalProblems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterAndCountMapEntries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FilterAndCountMapEntries" />
+      <module name="JavaPracticalProblems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="General" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="General" />
+      <module name="JavaPracticalProblems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LambdaExpression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LambdaExpression" />
+      <module name="JavaPracticalProblems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortMapValues" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortMapValues" />
+      <module name="JavaPracticalProblems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LambdaExpression" />
+        <item itemvalue="Application.CustomComparatorExample" />
+        <item itemvalue="Application.General" />
+        <item itemvalue="Application.SortMapValues" />
+        <item itemvalue="Application.FilterAndCountMapEntries" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14ec553f-1653-4c70-b81a-c41a3a5f5032" name="Changes" comment="" />
+      <created>1732801376200</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732801376200</updated>
+    </task>
+    <servers />
+  </component>
+</project>
