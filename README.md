@@ -1,4 +1,4 @@
-# backend-learning-hu
+# backend-learning-hub
 
 A curated collection of backend projects and experiments focused on clean architecture, scalable design, and production-grade engineering practices.
 
