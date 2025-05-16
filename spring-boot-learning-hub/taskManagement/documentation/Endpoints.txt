@@ -9,14 +9,14 @@ curl -X POST \
   http://localhost:8080/api/auth/signUp \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=po1" \
-  -d "password=r00t" \
+  -d "password=#PASSWORD" \
   -d "role"="PRODUCT_OWNER"
 
 curl -X POST \
   http://localhost:8080/api/auth/signUp \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=po2" \
-  -d "password=r00t" \
+  -d "password=#PASSWORD" \
   -d "role"="PRODUCT_OWNER"
 
 MANAGER
@@ -25,14 +25,14 @@ curl -X POST \
   http://localhost:8080/api/auth/signUp \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=m1" \
-  -d "password=r00t" \
+  -d "password=#PASSWORD" \
   -d "role"="MANAGER"
 
 curl -X POST \
   http://localhost:8080/api/auth/signUp \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=m2" \
-  -d "password=r00t" \
+  -d "password=#PASSWORD" \
   -d "role"="MANAGER"
 
 
@@ -49,7 +49,7 @@ curl -X POST \
   http://localhost:8080/api/auth/signUp \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=d2" \
-  -d "password=r00t" \
+  -d "password=#PASSWORD" \
   -d "role"="DEVELOPER"
 
 
@@ -59,14 +59,14 @@ curl -X POST \
   http://localhost:8080/api/auth/signUp \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=q1" \
-  -d "password=r00t" \
+  -d "password=#PASSWORD" \
   -d "role"="QA"
 
 curl -X POST \
   http://localhost:8080/api/auth/signUp \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=q2" \
-  -d "password=r00t" \
+  -d "password=#PASSWORD" \
   -d "role"="QA"
 
 Login:
@@ -75,7 +75,7 @@ curl -X POST \
   http://localhost:8080/api/auth/login \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "username=po1" \
-  -d "password=r00t"
+  -d "password=#PASSWORD"
 
 ----------------------------------------------------------------------------------
 Task Management
@@ -84,7 +84,7 @@ CREATE:
 
 curl -X POST "http://localhost:8080/api/task" \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX01BTkFHRVIiXSwic3ViIjoibTEiLCJpYXQiOjE3MzI3MjkyOTcsImV4cCI6MTczMjczMjg5N30.frixaCmhKoeL6RHGP5H-L3HpcrdiQiyTjMKhP6vTfUA" \
+-H "Authorization: #BEARERTOKENPLACEHOLDER" \
 -d '{
     "name": "Complete Assignment",
     "description": "Finish the Nodejs project",
@@ -99,7 +99,7 @@ curl -X POST "http://localhost:8080/api/task" \
 UPDATE:
 curl -X PUT "http://localhost:8080/api/task/2" \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1BST0RVQ1RfT1dORVIiXSwic3ViIjoicG8xIiwiaWF0IjoxNzMyNzI5NjM1LCJleHAiOjE3MzI3MzMyMzV9.64INdQTIK9Bibo_zzx83KuaaxWg-abzyFHbcBOLijZ4" \
+-H "Authorization: #BEARERTOKENPLACEHOLDER" \
 -d '{
     "name": "Complete Assignment",
     "description": "Finish the Nodejs project.",
@@ -113,21 +113,21 @@ curl -X PUT "http://localhost:8080/api/task/2" \
 GET All tasks:
 curl -X GET "http://localhost:8080/api/task/getAll" \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiIsIlJPTEVfUUEiXSwic3ViIjoic2FtIiwiaWF0IjoxNzMyNjM2OTExLCJleHAiOjE3MzI2NDA1MTF9.hDQJhzaLSf7q6EeWM7OHONS7WRM_kdxMOfXvbUHFcSo"
+-H "Authorization: #BEARERTOKENPLACEHOLDER"
 
 GET sort by priority:
 curl -X GET "http://localhost:8080/api/task/sortByPriority" \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYW0iLCJpYXQiOjE3MzIyMTI0OTEsImV4cCI6MTczMjIxNjA5MX0.__ZHA-NA2mi7JLPBHwLkuX1-kz5S31vHJpRkftMoGAg"
+-H "Authorization: #BEARERTOKENPLACEHOLDER"
 
 GET sort by due date:
 curl -X GET "http://localhost:8080/api/task/sortByDueDate" \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYW0iLCJpYXQiOjE3MzIyMTI0OTEsImV4cCI6MTczMjIxNjA5MX0.__ZHA-NA2mi7JLPBHwLkuX1-kz5S31vHJpRkftMoGAg"
+-H "Authorization: #BEARERTOKENPLACEHOLDER"
 
 
 DELETE:
 curl -X DELETE "http://localhost:8080/api/task/1" \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0RFVkVMT1BFUiIsIlJPTEVfUUEiXSwic3ViIjoibWF0dCIsImlhdCI6MTczMjYzOTg4MCwiZXhwIjoxNzMyNjQzNDgwfQ.NsijSzpmQAuAoT3ZiCMdHWN0FvfvzsgbcQRd3ypAeQU"
+-H "Authorization: #BEARERTOKENPLACEHOLDER"
 ----------------------------------------------------------------------------------
